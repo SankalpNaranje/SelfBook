@@ -13,7 +13,7 @@ const port = 5000
 //setting up cors
 app.use(cors(
   {
-    origin: ['http://localhost:3000'],
+    origin: ['https://self-book-frontend.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }
