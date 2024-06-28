@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json());
 
 // Default route
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json("Hello");
 });
 
