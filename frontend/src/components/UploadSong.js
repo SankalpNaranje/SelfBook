@@ -23,7 +23,7 @@ const UploadSong = () => {
       formData.append('artist', artist);
       formData.append('audio', audioFile);
 
-      const response = await axios.post('http://localhost:5000/api/songRoutes/upload-audio', formData, {
+      const response = await axios.post('https://self-book-backend.vercel.app/api/songRoutes/upload-audio', formData, {
         method: "POST",
         headers: {
             'Content-Type': 'multipart/form-data',

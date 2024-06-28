@@ -9,7 +9,7 @@ const AllSongs = () => {
   useEffect(() => {
     // Fetch all songs when the component mounts
     axios
-      .get("http://localhost:5000/api/songRoutes/all-songs") // Replace with your server URL
+      .get("https://self-book-backend.vercel.app/api/songRoutes/all-songs") // Replace with your server URL
       .then((response) => {
         setSongs(response.data);
       })
