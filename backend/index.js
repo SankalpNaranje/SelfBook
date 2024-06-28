@@ -24,6 +24,10 @@ app.use(express.json())
 //using the middleWare - to run the contents in the request of the body.
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.json("Hello");
+})
+
 //Available Routes.
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
@@ -36,3 +40,5 @@ app.listen(port, () => {
   console.log(`iNotebook backend listening at http://localhost:${port}`)
 })
   
+
+
