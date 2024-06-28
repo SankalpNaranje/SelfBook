@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 
 // Setup CORS
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://self-book-frontend.vercel.app'],
+    origin: 'https://self-book-frontend.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json());
 
 // Default route
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json("Hello");
 });
 
